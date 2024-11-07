@@ -1,0 +1,16 @@
+image: mcr.microsoft.com/playwright:focal
+
+stages:
+  - test
+
+test:
+  stage: test
+  before_script:
+    - npm install
+    - npx playwright install
+  script:
+    - npx playwright test --reporter=html,list
+  artifacts:
+    paths:
+      - playwright-report/
+    expire_in: 1 week

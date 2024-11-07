@@ -1,0 +1,16 @@
+{
+  "name": "dev_challenge_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.7.3"
+  }
+}
